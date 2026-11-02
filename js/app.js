@@ -42,7 +42,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     opacity: 0,
   });
 
-  gsap.set("#lighthouse-text .char", { opacity: 0 });
+  // gsap.set("#lighthouse-text .char", { opacity: 0 });
+
+  // const lightboxchars = document.querySelectorAll("#lighthouse-text .char");
+
+  // lightboxchars.forEach((char) => {
+  //   char.style.opacity = "0";
+  // });
+
   //loading animation
   const load_tl = gsap.timeline();
 
@@ -65,7 +72,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       duration: 0.4,
       // delay: 0.8,
     },
-    ">+=1"
+    ">+=1",
   );
 
   //rotate loader vid when prev animation start
@@ -76,7 +83,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       duration: 0.4,
       // delay: 0.8,
     },
-    ">"
+    ">",
   );
 
   //loader fade out
@@ -90,7 +97,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         $(".r-loader").css("pointer-events", "none");
       },
     },
-    ">"
+    ">",
   );
 
   //hero content fade in
@@ -143,7 +150,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
           $(".header-sounds-bit").css("pointer-events", "auto");
         },
       },
-      ">+=0.2"
+      ">+=0.2",
     );
   });
 
@@ -217,7 +224,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 
   // //sailing text animation
-  gsap.set("#sailing-bg-h2 .char", { opacity: 0, "--blur-elem": "5px" });
+  gsap.set("#sailing-bg-h2 .char", { "--blur-elem": "5px" });
 
   gsap
     .timeline({
@@ -240,7 +247,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     {
       opacity: 0,
       "--blur-elem": "6px",
-    }
+    },
   );
 
   //top item
